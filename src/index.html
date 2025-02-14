@@ -5,30 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/prod.css">
+    <style>
+        .brightRed {
+            color: hsl(12, 88%, 59%)
+        }
+
+        .brightRedLight {
+            color: hsl(12, 88%, 69%)
+        }
+
+        .brightRedSupLight {
+            color: hsl(12, 88%, 95%)
+        }
+
+        .darkBlue {
+            color: hsl(228, 39%, 23%)
+        }
+
+        .darkGrayishBlue {
+            color: hsl(227, 12%, 61%)
+        }
+
+        .veryDarkBlue {
+            color: hsl(233, 12%, 13%)
+        }
+
+        .veryPaleRed {
+            color: hsl(13, 100%, 96%)
+        }
+
+        .veryLightGray {
+            color: hsl(0, 0%, 98%)
+        }
+    </style>
     <title>Tailwind CSS</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="relative container mx-auto p-6">Navbar</nav>
-    <!-- Flex container -->
-    <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="pt-2 bg-red-200">
-            <img src="../img/logo.svg" alt="">
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="../img/logo.svg" alt="">
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-400">Pricing</a> <!-- Hover -->
+                <a href="#" class="hover:text-gray-400">Product</a>
+                <a href="#" class="hover:text-gray-400">About Us</a>
+                <a href="#" class="hover:text-gray-400">Careers</a>
+                <a href="#" class="hover:text-gray-400">Community</a>
+            </div>
+            <a href=""
+                class="hidden md:block p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-600">Get
+                Started</a>
         </div>
-        <!-- Menu Items -->
-        <div class="hidden md:flex space-x-6 bg-green-200">
-            <a href="#">Pricing</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Flex container-->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <!-- Left item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+                    Bring everyone together to build better projects
+                </h1>
+                <p class="max-w-sm text-center text-gray-500 md:text-left">
+                    Manage makes it simple for softeare teams to plan day-to-day task whie keeping the larger team goals
+                    in view.
+                </p>
+            </div>
+
+            <!-- Right item(Image) -->
+            <div>
+
+            </div>
         </div>
-        <div class="bg-blue-200">
-            Button
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
